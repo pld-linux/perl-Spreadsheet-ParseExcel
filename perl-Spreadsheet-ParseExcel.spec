@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Spreadsheet
@@ -48,14 +48,16 @@ Modu³ ten umo¿liwia odczyt informacji z plików w formacie xls (Microsoft Excel).
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-%{!?_without_tests:%{__make} test}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/Excel
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 install sample/{README,*.pl,res_*} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 install sample/Excel/*.xls $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/Excel
 
