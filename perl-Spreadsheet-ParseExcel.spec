@@ -1,14 +1,30 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Spreadsheet
-%define	pnam	ParseExcel
-Summary:	Spreadsheet::ParseExcel perl module
-Summary(pl):	Modu³ perla Spreadsheet::ParseExcel
-Name:		perl-%{pdir}-%{pnam}
+%define		pdir	Spreadsheet
+%define		pnam	ParseExcel
+Summary:	Spreadsheet::ParseExcel Perl module
+Summary(cs):	Modul Spreadsheet::ParseExcel pro Perl
+Summary(da):	Perlmodul Spreadsheet::ParseExcel
+Summary(de):	Spreadsheet::ParseExcel Perl Modul
+Summary(es):	Módulo de Perl Spreadsheet::ParseExcel
+Summary(fr):	Module Perl Spreadsheet::ParseExcel
+Summary(it):	Modulo di Perl Spreadsheet::ParseExcel
+Summary(ja):	Spreadsheet::ParseExcel Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	Spreadsheet::ParseExcel ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul Spreadsheet::ParseExcel
+Summary(pl):	Modu³ Perla Spreadsheet::ParseExcel
+Summary(pt):	Módulo de Perl Spreadsheet::ParseExcel
+Summary(pt_BR):	Módulo Perl Spreadsheet::ParseExcel
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::ParseExcel
+Summary(sv):	Spreadsheet::ParseExcel Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::ParseExcel
+Summary(zh_CN):	Spreadsheet::ParseExcel Perl Ä£¿é
+Name:		perl-Spreadsheet-ParseExcel
 Version:	0.2602
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -48,6 +64,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_sitelib}/Spreadsheet/ParseExcel.pm
+%dir %{perl_sitelib}/Spreadsheet/ParseExcel
 %{perl_sitelib}/Spreadsheet/ParseExcel/*.pm
 %{_mandir}/man3/*
-%{_examplesdir}/%{name}-%{version}
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/x*.pl
+%{_examplesdir}/%{name}-%{version}/[^x]*
