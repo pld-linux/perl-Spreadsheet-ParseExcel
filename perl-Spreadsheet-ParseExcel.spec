@@ -24,11 +24,11 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::ParseExcel
 Summary(zh_CN):	Spreadsheet::ParseExcel Perl Ä£¿é
 Name:		perl-Spreadsheet-ParseExcel
 Version:	0.2602
-Release:	0.2
+Release:	1.2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 4.0.2-56
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-OLE-Storage_Lite >= 0.08
 BuildArch:	noarch
@@ -44,7 +44,8 @@ Modu³ ten umo¿liwia odczyt informacji z plików w formacie xls (Microsoft Excel).
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -63,9 +64,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Spreadsheet/ParseExcel.pm
-%dir %{perl_sitelib}/Spreadsheet/ParseExcel
-%{perl_sitelib}/Spreadsheet/ParseExcel/*.pm
+%{perl_vendorlib}/Spreadsheet/ParseExcel.pm
+%dir %{perl_vendorlib}/Spreadsheet/ParseExcel
+%{perl_vendorlib}/Spreadsheet/ParseExcel/*.pm
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/x*.pl
