@@ -44,7 +44,7 @@ Modu³ ten umo¿liwia odczyt informacji z plików w formacie xls (Microsoft Excel).
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 %{!?_without_tests:%{__make} test}
 
