@@ -25,7 +25,7 @@ Summary(zh_CN):	Spreadsheet::ParseExcel Perl Ä£¿é
 Name:		perl-Spreadsheet-ParseExcel
 Version:	0.2602
 Release:	1.2
-License:	GPL
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	dd193b509e95f823e676c15a743da669
