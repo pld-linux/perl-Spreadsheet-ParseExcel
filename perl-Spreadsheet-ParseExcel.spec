@@ -24,7 +24,7 @@ Summary(uk):	Модуль для Perl Spreadsheet::ParseExcel
 Summary(zh_CN):	Spreadsheet::ParseExcel Perl дё©И
 Name:		perl-Spreadsheet-ParseExcel
 Version:	0.2602
-Release:	0.3
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
