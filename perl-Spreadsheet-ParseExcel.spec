@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Spreadsheet
-%define	pnam	ParseExcel
+%define		pdir	Spreadsheet
+%define		pnam	ParseExcel
 Summary:	Spreadsheet::ParseExcel - get information from xls (Microsoft Excel) files
 Summary(pl):	Spreadsheet::ParseExcel - odczyt informacji z plików w formacie xls (Microsoft Excel)
 Name:		perl-Spreadsheet-ParseExcel
