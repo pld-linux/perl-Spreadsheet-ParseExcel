@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Spreadsheet
-%define		pnam	ParseExcel
+%define	pdir	Spreadsheet
+%define	pnam	ParseExcel
 Summary:	Spreadsheet::ParseExcel Perl module
 Summary(cs):	Modul Spreadsheet::ParseExcel pro Perl
 Summary(da):	Perlmodul Spreadsheet::ParseExcel
