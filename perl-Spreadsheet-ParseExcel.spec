@@ -5,26 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Spreadsheet
 %define	pnam	ParseExcel
-Summary:	Spreadsheet::ParseExcel Perl module
-Summary(cs):	Modul Spreadsheet::ParseExcel pro Perl
-Summary(da):	Perlmodul Spreadsheet::ParseExcel
-Summary(de):	Spreadsheet::ParseExcel Perl Modul
-Summary(es):	Módulo de Perl Spreadsheet::ParseExcel
-Summary(fr):	Module Perl Spreadsheet::ParseExcel
-Summary(it):	Modulo di Perl Spreadsheet::ParseExcel
-Summary(ja):	Spreadsheet::ParseExcel Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	Spreadsheet::ParseExcel ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul Spreadsheet::ParseExcel
-Summary(pl):	Modu³ Perla Spreadsheet::ParseExcel
-Summary(pt):	Módulo de Perl Spreadsheet::ParseExcel
-Summary(pt_BR):	Módulo Perl Spreadsheet::ParseExcel
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::ParseExcel
-Summary(sv):	Spreadsheet::ParseExcel Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl Spreadsheet::ParseExcel
-Summary(zh_CN):	Spreadsheet::ParseExcel Perl Ä£¿é
+Summary:	Spreadsheet::ParseExcel - get information from xls (Microsoft Excel) files
+Summary(pl):	Spreadsheet::ParseExcel - odczyt informacji z plików w formacie xls (Microsoft Excel)
 Name:		perl-Spreadsheet-ParseExcel
 Version:	0.2603
-Release:	1
+Release:	2
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -36,10 +21,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module allows you to get information from Excel file.
+Spreadsheet::ParseExcel makes you to get information from Excel95,
+Excel97, Excel2000 file.
 
 %description -l pl
-Modu³ ten umo¿liwia odczyt informacji z plików w formacie xls (Microsoft Excel).
+Spreadsheet::ParseExcel umo¿liwia odczyt informacji z plików Excel95,
+Excel97 i Excel2000.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
