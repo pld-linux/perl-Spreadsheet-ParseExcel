@@ -14,7 +14,7 @@ Summary(fr):	Module Perl Spreadsheet::ParseExcel
 Summary(it):	Modulo di Perl Spreadsheet::ParseExcel
 Summary(ja):	Spreadsheet::ParseExcel Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Spreadsheet::ParseExcel ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Spreadsheet::ParseExcel
+Summary(nb):	Perlmodul Spreadsheet::ParseExcel
 Summary(pl):	Modu³ Perla Spreadsheet::ParseExcel
 Summary(pt):	Módulo de Perl Spreadsheet::ParseExcel
 Summary(pt_BR):	Módulo Perl Spreadsheet::ParseExcel
