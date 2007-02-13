@@ -6,7 +6,7 @@
 %define		pdir	Spreadsheet
 %define		pnam	ParseExcel
 Summary:	Spreadsheet::ParseExcel - get information from xls (Microsoft Excel) files
-Summary(pl.UTF-8):   Spreadsheet::ParseExcel - odczyt informacji z plików w formacie xls (Microsoft Excel)
+Summary(pl.UTF-8):	Spreadsheet::ParseExcel - odczyt informacji z plików w formacie xls (Microsoft Excel)
 Name:		perl-Spreadsheet-ParseExcel
 Version:	0.2603
 Release:	2
