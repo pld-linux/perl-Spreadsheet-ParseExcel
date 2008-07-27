@@ -9,7 +9,7 @@ Summary:	Spreadsheet::ParseExcel - get information from xls (Microsoft Excel) fi
 Summary(pl.UTF-8):	Spreadsheet::ParseExcel - odczyt informacji z plików w formacie xls (Microsoft Excel)
 Name:		perl-Spreadsheet-ParseExcel
 Version:	0.2603
-Release:	2
+Release:	3
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
