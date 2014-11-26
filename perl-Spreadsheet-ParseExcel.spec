@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Spreadsheet
 %define		pnam	ParseExcel
+%include	/usr/lib/rpm/macros.perl
 Summary:	Spreadsheet::ParseExcel - get information from xls (Microsoft Excel) files
 Summary(pl.UTF-8):	Spreadsheet::ParseExcel - odczyt informacji z plików w formacie xls (Microsoft Excel)
 Name:		perl-Spreadsheet-ParseExcel
@@ -14,9 +14,10 @@ License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6ee6257d4b66cb9e147a0b50603d1387
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Spreadsheet-ParseExcel/
 BuildRequires:	perl-OLE-Storage_Lite >= 0.08
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,8 +46,8 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/Excel
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install sample/{README,*.pl,res_*} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-install sample/Excel/*.xls $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/Excel
+cp -p sample/{README,*.pl,res_*} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p sample/Excel/*.xls $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/Excel
 
 %clean
 rm -rf $RPM_BUILD_ROOT
