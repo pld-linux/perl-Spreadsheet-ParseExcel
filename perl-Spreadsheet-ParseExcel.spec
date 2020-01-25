@@ -4,7 +4,6 @@
 
 %define		pdir	Spreadsheet
 %define		pnam	ParseExcel
-%include	/usr/lib/rpm/macros.perl
 Summary:	Spreadsheet::ParseExcel - get information from xls (Microsoft Excel) files
 Summary(pl.UTF-8):	Spreadsheet::ParseExcel - odczyt informacji z plików w formacie xls (Microsoft Excel)
 Name:		perl-Spreadsheet-ParseExcel
